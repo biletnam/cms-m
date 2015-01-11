@@ -1,0 +1,10 @@
+.admin_remark #remark, .admin_remark #remark textarea{
+    width: 400px;
+    height: 70px;
+    border: 1px solid #c4cdd6;
+    font-family: "Trebuchet MS", "Helvetica", sans-serif;
+    font-size: 13px;
+}
+.admin_remark #remark textarea{
+    margin: -1px 0 0 -1px; 
+}

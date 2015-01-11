@@ -15,9 +15,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model, 'parent_id'); ?>
-		<?php echo $form->dropDownList($model, 'parent_id', MenuItem::getListed(), array('empty' => '---')); ?>
-		<?php echo $form->error($model, 'parent_id'); ?>
+		<?php echo $form->labelEx($model, 'id_category'); ?>
+		<?php echo $form->dropDownList($model, 'id_category', MenuItem::getListed(), array('empty' => '---')); ?>
+		<?php echo $form->error($model, 'id_category'); ?>
 	</div>
 
 	<div class="row">

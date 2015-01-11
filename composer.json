@@ -1,0 +1,16 @@
+{
+  "require": {
+      "yiisoft/yii": "1.1.16"
+  },
+  "config": {
+      "process-timeout": 1800,
+      "vendor-dir": "vendor",
+      "component-dir": "static",
+      "discard-changes": true
+  },
+  "scripts": {
+      "post-install-cmd": [
+          "php protected/yiic install"
+      ]
+  }
+}

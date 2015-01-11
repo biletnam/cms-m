@@ -53,9 +53,34 @@ return CMap::mergeArray(
 			'config' => array(
 				'class' => 'CConfig',
 			),
+			'file'=>array(
+                'class'=>'application.extensions.file.CFile',
+            ),
+			'mailer' => array(
+                'class' => 'ext.mailer.YiiMail',
+                'transportType' => 'smtp',
+                'transportOptions' => array(
+                    'host' => 'smtp.yandex.ru',
+                    'username' => 'dispetcher.bikow@yandex.ru',
+                    'password' => 'vbybvev8cbvdjkjd',
+                    'port' => '465',
+                    'encryption' => 'ssl',
+                ),
+                'viewPath' => 'application.views.mail',
+                'logging' => true,
+                'dryRun' => false, // режим эмуляции, сообщение не будет отправлено
+                'emailFrom'=>'dispetcher.bikow@yandex.ru',
+            ),
 		),
 		'modules' => array(
 			'callback',	
+			'news',
+            'banners',
+            'catalog',
+			'order',
+			'yamarket',
+            'articles',
+            'ftsearch',
 		),
 		'behaviors' => array(
 			'runBranch' => array(
@@ -65,6 +90,9 @@ return CMap::mergeArray(
 			'modulesInformation' => array(
 				'class' => 'application.behaviors.ModulesInformationBehavior',
 			),
+		),
+		'params'=>array(
+			'isDemo'=>false,
 		),
 	),
 	require(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local.php'),

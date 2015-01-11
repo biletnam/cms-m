@@ -13,6 +13,8 @@ class ModulesUrlRules
 			$module = Yii::app()->getModule($module);
             if (isset($module->urlRules))
 				Yii::app()->getUrlManager()->addRules($module->urlRules);
+
+
         }
 		return true;
     }

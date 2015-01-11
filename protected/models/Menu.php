@@ -11,7 +11,7 @@
  * The followings are the available model relations:
  * @property MenuItem[] $menuItems
  */
-class Menu extends CActiveRecord
+class Menu extends BasicModel
 {
     /**
      * Returns the static model of the specified AR class.
@@ -83,7 +83,7 @@ class Menu extends CActiveRecord
     {
         $criteria = new CDbCriteria;
         $criteria->compare('id', $this->id, true);
-        $criteria->compare('title', $this->title, true);
+        $criteria->compare('t.title', $this->title, true);
         $criteria->compare('name', $this->name, true);
         $criteria->with = 'items';
 

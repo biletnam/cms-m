@@ -15,9 +15,9 @@ Yii::app()->clientScript
     <?php echo $form->errorSummary($model); ?>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'parent_id'); ?>
-        <?php echo $form->dropDownList($model, 'parent_id', Page::getListed((int)$model->id), array('empty' => array('0' => 'Не выбрано'))); ?>
-        <?php echo $form->error($model, 'parent_id'); ?>
+        <?php echo $form->labelEx($model, 'id_category'); ?>
+        <?php echo $form->dropDownList($model, 'id_category', Page::getListed((int)$model->id), array('empty' => array('0' => 'Не выбрано'))); ?>
+        <?php echo $form->error($model, 'id_category'); ?>
     </div>
 
     <div class="row">

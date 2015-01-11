@@ -5,6 +5,7 @@
  */
 class CallbackModule extends CWebModule
 {
+    private $mailer = null;
 	/**
 	 * Module init
 	 */
@@ -33,6 +34,17 @@ class CallbackModule extends CWebModule
 			return false;
 	}
 
+    /**
+     * @return CallbackMail|null
+     */
+    public function getMailer()
+    {
+        if ($this->mailer === null)
+            $this->mailer = new CallbackMail();
+
+        return $this->mailer;
+    }
+
 	/**
 	 * Sends a message
 	 *
@@ -44,7 +56,6 @@ class CallbackModule extends CWebModule
 	 */
 	public function sendMessage($to, $subject, $body)
 	{
-		$mailer = new CallbackMail();
-		return $mailer->send($to, $subject, $body);
+		return $this->getMailer()->send($to, $subject, $body);
 	}
 }

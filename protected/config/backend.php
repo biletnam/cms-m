@@ -16,6 +16,7 @@ return array(
 		'errorHandler' => array(
 			'errorAction' => 'main/error',
 		),
-	)
+	),
+
 );
 ?>

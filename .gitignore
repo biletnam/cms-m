@@ -1,10 +1,12 @@
-/.idea/*
-/log/*
-/www/index.php
-/www/robots.txt
-/www/assets/*
-/www/upload/*
-/protected/yiic.php
-/protected/runtime/*
-/protected/config/local.php
+# phpstorm project files
+.idea
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+# self
 !.gitignore

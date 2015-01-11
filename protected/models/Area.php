@@ -8,7 +8,7 @@
  * @property string $name
  * @property string $title
  */
-class Area extends CActiveRecord
+class Area extends BasicModel
 {
     /**
      * Returns the static model of the specified AR class.

@@ -8,7 +8,7 @@
  * @property string $sitename
  * @property string $admin_email
  */
-class Config extends CActiveRecord
+class Config extends BasicModel
 {
     /**
      * Returns the static model of the specified AR class.
@@ -48,7 +48,7 @@ class Config extends CActiveRecord
             'id' => 'ID',
             'sitename' => 'Название сайта',
             'author' => 'Автор сайта',
-            'adminonly' => 'Закрыть сайт для общего доступа',
+            'adminonly' => 'Скрыть сайт для общего доступа',
             'mainpage_id' => 'Главная страница',
         );
     }
