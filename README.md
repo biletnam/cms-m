@@ -7,6 +7,7 @@
 * Ввести доступы к БД: либо командой **php protected/yiic install local --rewrite=1 --host=hostname --dbname=dbname --username=username --password=password** , либо руками в файле */protected/config/local.php*
 * Выполнить команду **php protected/yiic install db** (Создаст структуру и данные в БД)
 * Административная панель находится по ссылке */manage*. Логин **admin**, пароль **admin**
+
 #### Установка вручную ####
 * Скачать архив проекта **https://github.com/plus1dev/cms-m/archive/master.zip**
 * Скачать фреймворк **https://github.com/yiisoft/yii/releases/download/1.1.16/yii-1.1.16.bca042.zip**
