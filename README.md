@@ -16,5 +16,6 @@
 * Из папки проекта **/protected/data** скопировать файл **local.php.template** в папку **/protected/config** и переименовать в **local.php**
 * Ввести доступы к БД в файле **/protected/config/local.php**
 * Накатить дамп базы **/protected/data/shop-plusonecms.sql**
+* Поставить права на запись для папок и подпапок **/protected/runtime/**, **/www/assets/**, **/www/upload/**
 * Перенести содержимое папки **/protected/data/upload.zip** в папку **/www/upload**
 * Административная панель находится по ссылке */manage*. Логин **admin**, пароль **admin**
